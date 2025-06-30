@@ -1,0 +1,30 @@
+{
+    "name": "be-fe-test-2",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "Nodejs"
+    ],
+    "homepage": "https://github.com/lngthienn/Nodejs#readme",
+    "bugs": {
+        "url": "https://github.com/lngthienn/Nodejs/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lngthienn/Nodejs.git"
+    },
+    "license": "ISC",
+    "author": "",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --inspect index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
+}
