@@ -4,9 +4,14 @@ import { engine } from 'express-handlebars';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import route from './routes/index.js';
+import db from './config/db/index.js';
 
 const app = express();
 const port = 3000;
+
+// Connect to DB
+db();
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
