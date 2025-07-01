@@ -5,8 +5,9 @@ function SiteController() {
         // [GET] /
         async index(req, res) {
             try {
-                const courses = await Course.find({});
-                res.json(courses);
+                const coursesRaw = await Course.find({});
+                const courses = coursesRaw.map((course) => course.toObject());
+                res.render('home', { courses });
             } catch (err) {
                 res.status(400).json({ error: 'Error!' });
             }
