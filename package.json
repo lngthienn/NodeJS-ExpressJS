@@ -28,7 +28,10 @@
     },
     "devDependencies": {
         "express-handlebars": "^8.0.2",
+        "i": "^0.3.7",
+        "mongoose-slug-generator": "^1.0.4",
         "morgan": "^1.10.0",
-        "nodemon": "^3.1.10"
+        "nodemon": "^3.1.10",
+        "npm": "^11.4.2"
     }
 }
